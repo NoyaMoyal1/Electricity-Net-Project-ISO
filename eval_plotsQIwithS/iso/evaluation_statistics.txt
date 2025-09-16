@@ -1,0 +1,49 @@
+Statistical Analysis of ISO Evaluation:
+
+dispatch_power:
+  total: 35840.08285522461
+  mean: 149.33367856343588
+  std: 36.1831377223455
+  min: 97.69109344482422
+  max: 196.929443359375
+  median: 149.32840728759766
+
+reserve_power:
+  total: 343.1078568855737
+  mean: 1.429616070356557
+  std: 1.3242659763198708
+  min: 0.0
+  max: 4.018104885096761
+  median: 1.4880176798502305
+
+pcs_energy_MWh:
+  total: 0.0
+  mean: 0.0
+  std: 0.0
+  min: 0.0
+  max: 0.0
+  median: 0.0
+
+dispatch_cost:
+  total: 3584008.285522461
+  mean: 14933.367856343588
+  std: 3618.31377223455
+  min: 9769.109344482422
+  max: 19692.9443359375
+  median: 14932.840728759766
+
+reserve_cost:
+  total: 68621.57137711474
+  mean: 285.9232140713114
+  std: 264.85319526397416
+  min: 0.0
+  max: 803.6209770193523
+  median: 297.6035359700461
+
+pcs_exchange_cost:
+  total: 0.0
+  mean: 0.0
+  std: 0.0
+  min: 0.0
+  max: 0.0
+  median: 0.0

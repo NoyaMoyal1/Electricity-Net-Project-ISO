@@ -1,0 +1,28 @@
+PCS-RLZoo-v0:
+  env_wrapper:
+    - gymnasium.wrappers.RescaleAction:
+        min_action: -1.0
+        max_action: 1.0
+  
+  normalize: true
+  n_envs: 2
+  n_timesteps: !!float 1e6
+  policy: 'MlpPolicy'
+  n_steps: 1024
+  batch_size: 128
+  gae_lambda: 0.95
+  gamma: 0.99
+  n_epochs: 10
+  ent_coef: 0.4
+  learning_rate: lin_1e-4
+  clip_range: 0.2
+  max_grad_norm: 1
+  vf_coef: 0.5
+  
+  policy_kwargs: "dict(log_std_init=-1,
+                       ortho_init=True,
+                       activation_fn=nn.Tanh,
+                        net_arch=dict(shared=[128, 128], pi=[128, 64], vf=[64, 64]))"
+    
+  # Use our direct callback class
+  callback: plot_callback.PlotCallback
